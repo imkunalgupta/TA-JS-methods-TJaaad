@@ -32,6 +32,17 @@ Example:
    - `charAt` accepts a index (number data type) and return the character on that index in the string.
 
 2. `toUpperCase`
+   - Return: A new string representing the calling string converted to upper case.
+   - Example:
+     ```js
+     const sentence = 'The quick brown fox jumps over the lazy dog.';
+     sentence.toUpperCase() // "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."
+     let name = 'Arya Stark';
+     name.toUpperCase(); //"ARYA STARK"
+     let houseName = 'Starks';
+     houseName.toUpperCase(); // "ARYA STARK"
+     ```
+
 3. `toLowerCase`
 4. `trim`
 5. `trimEnd`
