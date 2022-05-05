@@ -34,8 +34,47 @@ Example:
    - No it does not mutate the original array
 
 2. `join`
+
+   - Parameter: Specifies a string to separate each pair of adjacent elements of the array. The separator is converted to a string if necessary. If omitted, the array elements are separated with a comma (","). If separator is an empty string, all elements are joined without any characters in between them.
+   - Return: A string with all array elements joined. If arr.length is 0, the empty string is returned.
+   - Example:
+     ```js
+     let numbers = [1, 2, 3];
+     numbers.join(); //'1,2,3'
+     let elements = ['Fire', 'Air', 'Water'];
+     elements.join(); // 'Fire,Air,Water'
+     elements.join(''); // 'FireAirWater'
+    elements.join('-'); // 'Fire-Air-Water'
+     ```
+   - `join` The string conversions of all array elements are joined into one string.
+   - No it does not mutate the original array
+
 3. `flat`
+ - Parameter: depth Optional
+The depth level specifying how deep a nested array structure should be flattened. Defaults to 1.
+   - Return: A new array with the sub-array elements concatenated into it.
+   - Example:
+     ```js
+     let num1 = [1, 2, 3, [4, 5]];
+     num1.flat(); // [1, 2, 3, 4, 5]
+     let num2 = [1, 2, 3, [4, 5, [6, 7]]];
+     num2.flat(); // [1, 2, 3, 4, 5, [6, 7]]
+     let num3 = [1, 2, 3, [4, 5, [6, 7]]];
+     num3.flat(2); // [1, 2, 3, 4, 5, 6, 7]
+     ```
+   - `flat` TThe flat() method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+   - No it does not mutate the original array
 4. `push`
+ - Parameter: The element(s) to add to the end of the array.
+   - Return: The new length property of the object upon which the method was called.
+   - Example:
+     ```js
+     let animals = ['pigs', 'goats', 'sheep'];
+     let count = animals.push('cows');
+     console.log(count); // 4
+     ```
+   - `push` The push() method adds one or more elements to the end of an array and returns the new length of the array.
+   - yes it does mutate the original array
 5. `indexOf`
 6. `lastIndexOf`
 7. `includes`
