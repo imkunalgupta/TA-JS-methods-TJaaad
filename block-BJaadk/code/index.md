@@ -103,6 +103,7 @@ let sum = numbers.reduce(add);
 ```
 ![](./img/main10.png)
 
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function add(accumulator, currentValue) {
