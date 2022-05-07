@@ -1,7 +1,7 @@
 // NOTE: You can only use the (reduce) array method to solve this exercise:
 
 function countAllPeople() {
-  // your code goes here
+  got.houses.reduce(peopleByHouses);
 }
 
 function peopleByHouses() {
@@ -25,7 +25,7 @@ function surnameWithS() {
 }
 
 function surnameWithA() {
-  // your code goes here
+  
 }
 
 function peopleNameOfAllHouses() {
